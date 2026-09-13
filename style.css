@@ -23,3 +23,45 @@ a{text-decoration:none;color:inherit}.top{position:sticky;top:0;z-index:50;backg
 .modal{display:none;position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.9);align-items:center;justify-content:center;padding:20px}.modal.show{display:flex}.modal img{max-width:95vw;max-height:90vh;border-radius:14px}.close{position:absolute;right:20px;top:10px;color:white;background:none;border:0;font-size:40px}
 @media(max-width:850px){.nav{align-items:flex-start}.navlinks{justify-content:flex-start}.info-grid{grid-template-columns:1fr 1fr}.product-layout,.banner{grid-template-columns:1fr}}
 @media(max-width:520px){.hero{min-height:570px}.hero-content{padding:32px 18px}.section{padding:55px 14px}.info-grid{grid-template-columns:1fr}.card-media{height:245px}.section-head{display:block}}
+/* ============================= */
+/* INSTAGRAM EN EL FOOTER */
+/* ============================= */
+
+.redes-footer {
+    margin-top: 25px;
+}
+
+.redes-footer p {
+    color: #00c8ff;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.redes-footer a {
+    display: inline-block;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    border: 1px solid #00c8ff;
+    border-radius: 10px;
+
+    padding: 10px 20px;
+
+    background: rgba(0, 200, 255, 0.08);
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.redes-footer a:hover {
+    background: #00c8ff;
+    color: #001018;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 5px 20px rgba(0, 200, 255, 0.35);
+}
