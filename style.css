@@ -106,3 +106,74 @@ section {
     display: block !important;
     width: 100%;
 }
+/* ===== CORRECCIÓN GENERAL DE LA PÁGINA ===== */
+
+html,
+body {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+}
+
+body {
+    display: block !important;
+    flex-direction: column !important;
+}
+
+/* Cada sección debe ocupar todo el ancho */
+.top,
+.hero,
+.section,
+.contact,
+footer {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: none !important;
+}
+
+/* Contenido interno centrado */
+.nav,
+.section,
+.product-page {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* El menú debe estar horizontal */
+.nav {
+    display: flex !important;
+}
+
+/* El hero ocupa toda la pantalla */
+.hero {
+    display: grid !important;
+    width: 100% !important;
+    min-height: 640px;
+}
+
+/* Productos en cuadrícula */
+.products {
+    display: grid !important;
+    width: 100% !important;
+}
+
+/* Categorías en cuadrícula */
+.info-grid {
+    display: grid !important;
+    width: 100% !important;
+}
+
+/* Marcación láser */
+.banner {
+    display: grid !important;
+    width: 100% !important;
+}
+
+/* Contacto */
+.contact {
+    display: block !important;
+    text-align: center !important;
+}
