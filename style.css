@@ -639,3 +639,70 @@ footer{
         padding:20px;
     }
 }
+/* =========================
+   BIBLIOTECA / GALERÍA
+========================= */
+
+.biblioteca {
+    padding-top: 70px;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.galeria-item {
+    height: 300px;
+    background: #02080d;
+    border: 1px solid rgba(255,255,255,.10);
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,.35);
+    transition: .3s;
+}
+
+.galeria-item:hover {
+    transform: translateY(-6px);
+    border-color: rgba(40,216,255,.45);
+}
+
+.galeria-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.galeria-item:hover img {
+    transform: scale(1.04);
+}
+
+.galeria-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    background: #000;
+}
+
+/* Adaptación para celular */
+
+@media(max-width:850px) {
+    .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:520px) {
+    .galeria-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria-item {
+        height: 260px;
+    }
+}
