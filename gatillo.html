@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <title>Gatillo Doble Pieza | Tritón Arpones</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- MENÚ -->
+
+    <div class="top">
+
+        <div class="nav">
+
+            <a class="brand" href="index.html">
+
+                <img
+                    src="logo.jpg"
+                    alt="Tritón"
+                >
+
+                TRITÓN
+
+            </a>
+
+
+            <div class="navlinks">
+
+                <a href="index.html">
+                    Inicio
+                </a>
+
+                <a href="index.html#productos">
+                    Productos
+                </a>
+
+                <a href="index.html#categorias">
+                    Categorías
+                </a>
+
+                <a href="index.html#envios">
+                    Envíos
+                </a>
+
+                <a href="index.html#contacto">
+                    Contacto
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- PRODUCTO -->
+
+    <main class="product-page">
+
+        <a
+            href="index.html#productos"
+            class="back"
+        >
+            ← Volver al catálogo
+        </a>
+
+
+        <div class="product-layout">
+
+
+            <!-- IMAGEN -->
+
+            <div class="product-photo">
+
+                <img
+                    src="gatillo2.png"
+                    alt="Gatillo doble pieza Tritón Arpones"
+                    onclick="openModal('gatillo2.png')"
+                >
+
+            </div>
+
+
+
+            <!-- INFORMACIÓN -->
+
+            <div class="product-info">
+
+                <div class="kicker">
+                    TRITÓN ARPONES
+                </div>
+
+
+                <h1>
+                    Gatillo Doble Pieza
+                </h1>
+
+
+                <p class="lead">
+
+                    Gatillo profesional de doble pieza
+                    diseñado para arpones Tritón.
+
+                    Fabricado en acero inoxidable y pensado
+                    para ofrecer resistencia, precisión y
+                    durabilidad.
+
+                </p>
+
+
+
+                <!-- ESPECIFICACIONES -->
+
+                <div class="specs">
+
+
+                    <div class="spec">
+
+                        <strong>
+                            ⚙️ Sistema
+                        </strong>
+
+                        <br>
+
+                        Doble pieza
+
+                    </div>
+
+
+
+                    <div class="spec">
+
+                        <strong>
+                            🔩 Material
+                        </strong>
+
+                        <br>
+
+                        Acero inoxidable 6 mm
+
+                    </div>
+
+
+
+                    <div class="spec">
+
+                        <strong>
+                            🛡️ Resistencia
+                        </strong>
+
+                        <br>
+
+                        Resistente a la corrosión
+                        y al agua salada
+
+                    </div>
+
+
+
+                    <div class="spec">
+
+                        <strong>
+                            🪢 Sujeta piola
+                        </strong>
+
+                        <br>
+
+                        Incluida
+
+                    </div>
+
+
+
+                    <div class="spec">
+
+                        <strong>
+                            🔧 Incluye
+                        </strong>
+
+                        <br>
+
+                        Tornillos de fijación
+
+                    </div>
+
+
+
+                    <div class="spec">
+
+                        <strong>
+                            ⏱️ Garantía
+                        </strong>
+
+                        <br>
+
+                        5 meses
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- PRECIO -->
+
+                <div class="actions">
+
+                    <span class="price">
+                        $85.000 COP
+                    </span>
+
+                </div>
+
+
+
+                <!-- WHATSAPP -->
+
+                <div class="actions">
+
+                    <a
+                        class="btn green"
+                        target="_blank"
+                        href="https://wa.me/573209865724?text=Hola%20Trit%C3%B3n%20Arpones%2C%20estoy%20interesado%20en%20el%20Gatillo%20Doble%20Pieza%20de%20%2485.000."
+                    >
+                        💬 Comprar por WhatsApp
+                    </a>
+
+                </div>
+
+
+                <p class="lead">
+
+                    🚚 Realizamos envíos nacionales e
+                    internacionales.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- MODAL DE IMAGEN -->
+
+    <div
+        class="modal"
+        id="modal"
+        onclick="closeModal()"
+    >
+
+        <button class="close">
+            ×
+        </button>
+
+        <img
+            id="modalImg"
+            src=""
+            alt="Gatillo Doble Pieza"
+        >
+
+    </div>
+
+
+
+    <footer>
+
+        <strong>
+            TRITÓN ARPONES
+        </strong>
+
+        <br>
+        <br>
+
+        Precisión · Resistencia · Calidad
+
+        <br>
+        © 2026
+
+    </footer>
+
+
+
+    <script>
+
+        function openModal(src) {
+
+            document
+                .getElementById('modalImg')
+                .src = src;
+
+            document
+                .getElementById('modal')
+                .classList
+                .add('show');
+
+        }
+
+
+        function closeModal() {
+
+            document
+                .getElementById('modal')
+                .classList
+                .remove('show');
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
