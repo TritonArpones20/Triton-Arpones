@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <title>Gatillo Una Pieza | Tritón Arpones</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVEGACIÓN -->
+
+    <div class="top">
+
+        <div class="nav">
+
+            <a class="brand" href="index.html">
+
+                <img
+                    src="logo.jpg"
+                    alt="Tritón Arpones"
+                >
+
+                TRITÓN
+
+            </a>
+
+            <div class="navlinks">
+
+                <a href="index.html">
+                    Inicio
+                </a>
+
+                <a href="index.html#productos">
+                    Productos
+                </a>
+
+                <a href="index.html#categorias">
+                    Categorías
+                </a>
+
+                <a href="index.html#envios">
+                    Envíos
+                </a>
+
+                <a href="index.html#contacto">
+                    Contacto
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCTO -->
+
+    <main class="product-page">
+
+        <a
+            href="index.html#productos"
+            class="back"
+        >
+            ← Volver al catálogo
+        </a>
+
+
+        <div class="product-layout">
+
+
+            <!-- FOTO -->
+
+            <div class="product-photo">
+
+                <img
+                    src="gatillo1.png"
+                    alt="Gatillo Una Pieza Tritón Arpones"
+                    onclick="openModal('gatillo1.png')"
+                >
+
+            </div>
+
+
+            <!-- INFORMACIÓN -->
+
+            <div class="product-info">
+
+                <div class="kicker">
+                    TRITÓN ARPONES
+                </div>
+
+
+                <h1>
+                    Gatillo Una Pieza
+                </h1>
+
+
+                <p class="lead">
+
+                    Gatillo profesional de una pieza
+                    para arpones.
+
+                    Su diseño sencillo y resistente
+                    proporciona un funcionamiento
+                    confiable y duradero.
+
+                </p>
+
+
+                <!-- CARACTERÍSTICAS -->
+
+                <div class="specs">
+
+
+                    <div class="spec">
+
+                        <strong>
+                            ⚙️ Sistema
+                        </strong>
+
+                        <br>
+
+                        1 pieza
+
+                    </div>
+
+
+                    <div class="spec">
+
+                        <strong>
+                            🔩 Material
+                        </strong>
+
+                        <br>
+
+                        Acero inoxidable 4 mm
+
+                    </div>
+
+
+                    <div class="spec">
+
+                        <strong>
+                            🛡️ Resistencia
+                        </strong>
+
+                        <br>
+
+                        Alta resistencia
+                        a la corrosión
+
+                    </div>
+
+
+                    <div class="spec">
+
+                        <strong>
+                            🎯 Soporte
+                        </strong>
+
+                        <br>
+
+                        Hasta 2 ligas
+
+                    </div>
+
+
+                    <div class="spec">
+
+                        <strong>
+                            🕐 Garantía
+                        </strong>
+
+                        <br>
+
+                        5 meses
+
+                    </div>
+
+
+                    <div class="spec">
+
+                        <strong>
+                            🔧 Instalación
+                        </strong>
+
+                        <br>
+
+                        Fácil instalación
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRECIO -->
+
+                <div class="actions">
+
+                    <span class="price">
+                        $43.000 COP
+                    </span>
+
+                </div>
+
+
+                <!-- WHATSAPP -->
+
+                <div class="actions">
+
+                    <a
+                        class="btn green"
+                        target="_blank"
+                        href="https://wa.me/573209865724?text=Hola%20Trit%C3%B3n%20Arpones%2C%20estoy%20interesado%20en%20el%20Gatillo%20Una%20Pieza%20de%20%2443.000."
+                    >
+                        💬 Consultar por WhatsApp
+                    </a>
+
+                </div>
+
+
+                <p class="lead">
+
+                    🚚 Realizamos envíos nacionales
+                    e internacionales.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- MODAL -->
+
+    <div
+        class="modal"
+        id="modal"
+        onclick="closeModal()"
+    >
+
+        <button class="close">
+            ×
+        </button>
+
+        <img
+            id="modalImg"
+            src=""
+            alt="Gatillo Una Pieza"
+        >
+
+    </div>
+
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer>
+
+        <strong>
+            TRITÓN ARPONES
+        </strong>
+
+        <br><br>
+
+        Precisión · Resistencia · Calidad
+
+        <br>
+
+        © 2026
+
+    </footer>
+
+
+    <script>
+
+        function openModal(src) {
+
+            document
+                .getElementById("modalImg")
+                .src = src;
+
+            document
+                .getElementById("modal")
+                .classList
+                .add("show");
+
+        }
+
+
+        function closeModal() {
+
+            document
+                .getElementById("modal")
+                .classList
+                .remove("show");
+
+        }
+
+    </script>
+
+</body>
+
+</html>
