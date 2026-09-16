@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Kit Pesca Tritón Kit 3 - Arpón 50 cm, careta tipo gafa, varilla 3/16, dos ligas y linterna sumergible.">
+  <title>Kit Pesca - Kit 3 | Tritón Arpones</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    :root{
+      --azul:#061b55;
+      --azul2:#0b4ed8;
+      --cyan:#12dff3;
+      --amarillo:#ffe600;
+      --rojo:#ef2020;
+      --blanco:#fff;
+      --gris:#f4f7fb;
+      --texto:#17213a;
+      --sombra:0 18px 45px rgba(3,20,65,.16);
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Arial,Helvetica,sans-serif;
+      color:var(--texto);
+      background:
+        radial-gradient(circle at 10% 10%,rgba(18,223,243,.10),transparent 28%),
+        linear-gradient(180deg,#f7fbff 0%,#fff 55%,#eef6ff 100%);
+    }
+
+    a{text-decoration:none}
+
+    .kit3-top{
+      background:linear-gradient(135deg,#03113e,#06318b 60%,#0a63cf);
+      color:#fff;
+      position:relative;
+      overflow:hidden;
+    }
+    .kit3-top:before,
+    .kit3-top:after{
+      content:"";
+      position:absolute;
+      border-radius:50%;
+      border:1px solid rgba(18,223,243,.28);
+      pointer-events:none;
+    }
+    .kit3-top:before{width:420px;height:420px;right:-150px;top:-250px}
+    .kit3-top:after{width:300px;height:300px;left:-180px;bottom:-230px}
+
+    .kit3-nav{
+      max-width:1180px;
+      margin:auto;
+      padding:18px 22px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+      position:relative;
+      z-index:2;
+    }
+    .kit3-brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      color:#fff;
+      font-size:22px;
+      font-weight:900;
+      letter-spacing:1px;
+    }
+    .kit3-brand img{height:46px;width:auto;object-fit:contain}
+    .kit3-back{
+      color:#fff;
+      border:1px solid rgba(255,255,255,.35);
+      padding:10px 16px;
+      border-radius:999px;
+      font-weight:800;
+      background:rgba(255,255,255,.08);
+      transition:.2s;
+    }
+    .kit3-back:hover{background:rgba(255,255,255,.18);transform:translateY(-1px)}
+
+    .kit3-hero{
+      max-width:1180px;
+      margin:auto;
+      padding:45px 22px 75px;
+      display:grid;
+      grid-template-columns:minmax(0,1.05fr) minmax(340px,.95fr);
+      align-items:center;
+      gap:55px;
+      position:relative;
+      z-index:1;
+    }
+
+    .kit3-photo{
+      background:#fff;
+      border-radius:30px;
+      padding:13px;
+      box-shadow:0 28px 70px rgba(0,0,0,.28);
+      transform:rotate(-1deg);
+      position:relative;
+    }
+    .kit3-photo:before{
+      content:"KIT 3";
+      position:absolute;
+      top:25px;
+      left:25px;
+      z-index:2;
+      background:var(--amarillo);
+      color:#050505;
+      font-weight:1000;
+      font-size:20px;
+      padding:10px 18px;
+      border-radius:8px;
+      transform:rotate(-3deg);
+      box-shadow:0 6px 15px rgba(0,0,0,.18);
+    }
+    .kit3-photo img{
+      display:block;
+      width:100%;
+      height:auto;
+      border-radius:22px;
+    }
+
+    .kit3-copy{color:#fff}
+    .kit3-kicker{
+      display:inline-block;
+      background:var(--amarillo);
+      color:#050505;
+      font-weight:1000;
+      padding:8px 15px;
+      border-radius:999px;
+      margin-bottom:14px;
+      text-transform:uppercase;
+      letter-spacing:.7px;
+    }
+    .kit3-copy h1{
+      margin:0 0 8px;
+      font-size:clamp(42px,6vw,76px);
+      line-height:.92;
+      font-weight:1000;
+      letter-spacing:-2px;
+      text-transform:uppercase;
+    }
+    .kit3-copy h1 span{color:var(--cyan)}
+    .kit3-subtitle{
+      margin:0 0 22px;
+      font-size:21px;
+      line-height:1.5;
+      color:#dceaff;
+      max-width:590px;
+    }
+    .kit3-price{
+      display:inline-flex;
+      align-items:center;
+      gap:12px;
+      background:#fff;
+      color:#07133a;
+      padding:13px 20px;
+      border-radius:15px;
+      box-shadow:0 10px 30px rgba(0,0,0,.2);
+      margin-bottom:22px;
+    }
+    .kit3-price small{font-size:13px;font-weight:800;color:#68738c}
+    .kit3-price strong{font-size:38px;color:var(--rojo);line-height:1}
+
+    .kit3-actions{display:flex;flex-wrap:wrap;gap:12px}
+    .kit3-btn{
+      display:inline-flex;
+      justify-content:center;
+      align-items:center;
+      gap:8px;
+      min-height:50px;
+      padding:13px 21px;
+      border-radius:12px;
+      font-weight:900;
+      transition:.2s;
+    }
+    .kit3-btn:hover{transform:translateY(-2px)}
+    .kit3-btn.primary{background:var(--rojo);color:#fff;box-shadow:0 10px 25px rgba(239,32,32,.3)}
+    .kit3-btn.secondary{background:#fff;color:#07133a}
+    .kit3-note{
+      margin-top:16px;
+      font-size:14px;
+      color:#bcd4f6;
+    }
+
+    .kit3-section{
+      max-width:1180px;
+      margin:auto;
+      padding:70px 22px;
+    }
+    .kit3-title{text-align:center;margin-bottom:38px}
+    .kit3-title h2{
+      margin:0 0 8px;
+      font-size:clamp(30px,4vw,46px);
+      color:var(--azul);
+      font-weight:1000;
+    }
+    .kit3-title p{margin:0;color:#65728b;font-size:17px}
+
+    .kit3-grid{
+      display:grid;
+      grid-template-columns:repeat(5,1fr);
+      gap:16px;
+    }
+    .kit3-item{
+      background:#fff;
+      border:1px solid #e1e9f5;
+      border-radius:20px;
+      padding:24px 17px;
+      text-align:center;
+      box-shadow:var(--sombra);
+      transition:.2s;
+    }
+    .kit3-item:hover{transform:translateY(-5px)}
+    .kit3-icon{
+      width:58px;height:58px;
+      margin:0 auto 15px;
+      display:grid;
+      place-items:center;
+      border-radius:50%;
+      background:#e8fbff;
+      border:2px solid var(--cyan);
+      font-size:28px;
+    }
+    .kit3-item h3{margin:0 0 7px;color:var(--azul);font-size:18px}
+    .kit3-item p{margin:0;color:#68748a;font-size:14px;line-height:1.45}
+
+    .kit3-info{
+      background:linear-gradient(135deg,#06194e,#073d9d);
+      color:#fff;
+      border-radius:30px;
+      padding:42px;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px;
+      box-shadow:var(--sombra);
+    }
+    .kit3-info h2{margin:0 0 14px;font-size:34px}
+    .kit3-info p{color:#d6e5ff;line-height:1.65;margin:0 0 20px}
+    .kit3-list{list-style:none;padding:0;margin:0;display:grid;gap:13px}
+    .kit3-list li{
+      display:flex;
+      gap:11px;
+      align-items:flex-start;
+      color:#eef5ff;
+      line-height:1.45;
+    }
+    .kit3-list b{color:var(--cyan)}
+
+    .kit3-order{
+      background:#fff;
+      border-radius:24px;
+      padding:28px;
+      color:var(--texto);
+    }
+    .kit3-order h3{margin:0 0 10px;color:var(--azul);font-size:25px}
+    .kit3-order .total{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:15px 0 20px;
+      margin-bottom:15px;
+      border-bottom:1px solid #e1e7f0;
+    }
+    .kit3-order .total strong{font-size:31px;color:var(--rojo)}
+    .kit3-order .delivery{font-size:14px;color:#68748a;margin-bottom:18px}
+
+    .kit3-faq{max-width:850px;margin:auto;display:grid;gap:12px}
+    .kit3-faq details{
+      background:#fff;
+      border:1px solid #e1e8f2;
+      border-radius:15px;
+      padding:18px 20px;
+      box-shadow:0 6px 18px rgba(3,20,65,.06);
+    }
+    .kit3-faq summary{cursor:pointer;font-weight:900;color:var(--azul)}
+    .kit3-faq p{color:#68748a;line-height:1.55;margin:13px 0 0}
+
+    .kit3-footer{
+      text-align:center;
+      background:#03123f;
+      color:#bcd0ef;
+      padding:35px 20px;
+    }
+    .kit3-footer strong{color:#fff;font-size:20px}
+
+    @media(max-width:900px){
+      .kit3-hero{grid-template-columns:1fr;gap:35px;padding-top:30px}
+      .kit3-copy{order:-1}
+      .kit3-grid{grid-template-columns:repeat(2,1fr)}
+      .kit3-info{grid-template-columns:1fr}
+    }
+    @media(max-width:560px){
+      .kit3-nav{padding:14px 16px}
+      .kit3-brand img{height:38px}
+      .kit3-brand{font-size:18px}
+      .kit3-back{padding:8px 12px;font-size:13px}
+      .kit3-hero{padding:25px 15px 55px}
+      .kit3-copy h1{font-size:48px}
+      .kit3-subtitle{font-size:17px}
+      .kit3-price strong{font-size:30px}
+      .kit3-section{padding:50px 15px}
+      .kit3-grid{grid-template-columns:1fr}
+      .kit3-info{padding:25px 20px;border-radius:22px}
+      .kit3-order{padding:22px}
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="kit3-top">
+  <nav class="kit3-nav">
+    <a class="kit3-brand" href="index.html">
+      <img src="logo.jpg" alt="Tritón Arpones">
+      <span>TRITÓN ARPONES</span>
+    </a>
+    <a class="kit3-back" href="index.html#kits">← Volver al catálogo</a>
+  </nav>
+
+  <div class="kit3-hero">
+    <div class="kit3-photo">
+      <img src="kit3.png" alt="Kit Pesca Tritón Kit 3">
+    </div>
+
+    <div class="kit3-copy">
+      <div class="kit3-kicker">Equipo completo de pesca</div>
+      <h1>Kit <span>3</span></h1>
+      <p class="kit3-subtitle">
+        Todo lo necesario para comenzar tu aventura de pesca submarina:
+        arpón de 50 cm, careta, varilla, ligas y linterna sumergible.
+      </p>
+
+      <div class="kit3-price">
+        <div>
+          <small>PRECIO DEL KIT</small><br>
+          <strong>$195.000</strong>
+        </div>
+        <b>COP</b>
+      </div>
+
+      <div class="kit3-actions">
+        <a class="kit3-btn primary"
+           href="https://wa.me/573209865724?text=Hola%20Trit%C3%B3n%20Arpones%2C%20quiero%20comprar%20el%20Kit%203%20de%20pesca%20por%20%24195.000%20COP.">
+          💬 Comprar por WhatsApp
+        </a>
+        <a class="kit3-btn secondary" href="#contenido">Ver contenido ↓</a>
+      </div>
+
+      <div class="kit3-note">🚚 Consulta disponibilidad y valor del envío antes de realizar tu pedido.</div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="kit3-section" id="contenido">
+  <div class="kit3-title">
+    <h2>¿Qué incluye el Kit 3?</h2>
+    <p>Los componentes mostrados en la publicación del producto.</p>
+  </div>
+
+  <div class="kit3-grid">
+    <article class="kit3-item">
+      <div class="kit3-icon">🔱</div>
+      <h3>Arpón 50 cm</h3>
+      <p>Arpón de 50 cm con dos ligas.</p>
+    </article>
+
+    <article class="kit3-item">
+      <div class="kit3-icon">〰️</div>
+      <h3>Varilla 3/16</h3>
+      <p>Varilla en medida 3/16 para el equipo.</p>
+    </article>
+
+    <article class="kit3-item">
+      <div class="kit3-icon">🥽</div>
+      <h3>Careta tipo gafa</h3>
+      <p>Careta con vidrio templado.</p>
+    </article>
+
+    <article class="kit3-item">
+      <div class="kit3-icon">🔦</div>
+      <h3>Linterna</h3>
+      <p>Linterna sumergible con batería AA.</p>
+    </article>
+
+    <article class="kit3-item">
+      <div class="kit3-icon">🎣</div>
+      <h3>2 ligas</h3>
+      <p>Dos ligas incluidas con el arpón.</p>
+    </article>
+  </div>
+</section>
+
+<section class="kit3-section">
+  <div class="kit3-info">
+    <div>
+      <h2>Kit listo para tu aventura</h2>
+      <p>
+        El Kit 3 reúne los elementos indicados en la publicación para que
+        puedas llevar un equipo compacto y práctico para tus salidas de
+        pesca submarina.
+      </p>
+
+      <ul class="kit3-list">
+        <li><b>✓</b><span>Arpón de 50 cm.</span></li>
+        <li><b>✓</b><span>Dos ligas.</span></li>
+        <li><b>✓</b><span>Varilla 3/16.</span></li>
+        <li><b>✓</b><span>Careta tipo gafa con vidrio templado.</span></li>
+        <li><b>✓</b><span>Linterna sumergible con batería AA.</span></li>
+      </ul>
+    </div>
+
+    <div class="kit3-order">
+      <h3>Solicita tu Kit 3</h3>
+      <p>Escríbenos directamente para confirmar disponibilidad y coordinar tu pedido.</p>
+
+      <div class="total">
+        <span>Kit 3</span>
+        <strong>$195.000</strong>
+      </div>
+
+      <div class="delivery">Precio en pesos colombianos. El envío se consulta según destino.</div>
+
+      <a class="kit3-btn primary" style="width:100%"
+         href="https://wa.me/573209865724?text=Hola%20Trit%C3%B3n%20Arpones%2C%20quiero%20consultar%20disponibilidad%20del%20Kit%203%20de%20pesca%20por%20%24195.000%20COP.">
+        💬 Consultar disponibilidad
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="kit3-section">
+  <div class="kit3-title">
+    <h2>Preguntas frecuentes</h2>
+    <p>Información rápida antes de realizar tu pedido.</p>
+  </div>
+
+  <div class="kit3-faq">
+    <details>
+      <summary>¿Cuál es el precio del Kit 3?</summary>
+      <p>El precio publicado para el Kit 3 es de $195.000 COP.</p>
+    </details>
+
+    <details>
+      <summary>¿Qué medida tiene el arpón?</summary>
+      <p>El Kit 3 incluye un arpón de 50 cm.</p>
+    </details>
+
+    <details>
+      <summary>¿Qué varilla incluye?</summary>
+      <p>Incluye una varilla de 3/16.</p>
+    </details>
+
+    <details>
+      <summary>¿La careta tiene vidrio templado?</summary>
+      <p>Sí. La publicación del Kit 3 indica una careta tipo gafa con vidrio templado.</p>
+    </details>
+
+    <details>
+      <summary>¿La linterna es sumergible?</summary>
+      <p>Sí. Incluye una linterna sumergible con batería AA.</p>
+    </details>
+
+    <details>
+      <summary>¿Hacen envíos?</summary>
+      <p>Consulta por WhatsApp la disponibilidad, el valor del envío y el tiempo de entrega según tu destino.</p>
+    </details>
+  </div>
+</section>
+
+<section class="kit3-section" style="padding-top:10px">
+  <div style="text-align:center;background:linear-gradient(135deg,#ffe600,#ffd000);border-radius:25px;padding:35px 20px;box-shadow:var(--sombra)">
+    <h2 style="margin:0 0 10px;color:#050505;font-size:32px">¿Listo para pedir el Kit 3?</h2>
+    <p style="margin:0 0 20px;color:#222">Habla directamente con Tritón Arpones.</p>
+    <a class="kit3-btn primary"
+       href="https://wa.me/573209865724?text=Hola%20Trit%C3%B3n%20Arpones%2C%20quiero%20el%20Kit%203%20de%20pesca.">
+      💬 Pedir por WhatsApp
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer class="kit3-footer">
+  <strong>TRITÓN ARPONES</strong>
+  <p>Precisión · Resistencia · Calidad</p>
+  <a href="https://www.instagram.com/arpon.triton/" target="_blank" rel="noopener noreferrer" style="color:#12dff3">
+    📷 @arpon.triton
+  </a>
+  <p>© 2026</p>
+</footer>
+
+</body>
+</html>
